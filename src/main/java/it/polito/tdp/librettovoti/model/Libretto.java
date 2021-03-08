@@ -14,6 +14,26 @@ public class Libretto {
 		this.voti.add(v);
 	}
 	
+	public List<Voto> listaVotiUguali (int punteggio) {
+		//restituisco solo i voti uguali al criterio
+		List<Voto> ris= new ArrayList<Voto>();
+		for (Voto v : this.voti)
+			if (v.getVoto()==punteggio)
+				ris.add(v);
+		return ris;		
+	}
+	
+	public Libretto votiUguali(int punteggio) {
+		//restituisco solo i voti uguali al criterio
+		Libretto ris = new Libretto();
+		for (Voto v : this.voti) {
+			if (v.getVoto()==punteggio) {
+				ris.add(v);
+			}
+		}
+		return ris;
+	}
+	
 	public String toString() {
 		String s="";
 		for (Voto v : this.voti) {
