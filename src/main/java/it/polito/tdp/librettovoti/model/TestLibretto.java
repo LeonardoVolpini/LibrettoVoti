@@ -13,6 +13,7 @@ public class TestLibretto {
 		libretto.add(voto1);
 		libretto.add(new Voto("Fisica 1", 28, LocalDate.of(2019, 7, 2)));
 		libretto.add(new Voto("Informatica", 23, LocalDate.of(2019, 9, 1)));
+		libretto.add(new Voto("Algebra", 20, LocalDate.of(2019, 2, 1)));
 		System.out.println(libretto);
 	}
 

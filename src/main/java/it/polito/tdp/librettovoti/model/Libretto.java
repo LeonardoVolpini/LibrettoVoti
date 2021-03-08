@@ -19,6 +19,6 @@ public class Libretto {
 		for (Voto v : this.voti) {
 			s = s + v.toString() + "\n";
 		}
-		return s;
+		return s; 
 	}
 }
