@@ -3,6 +3,8 @@ package it.polito.tdp.librettovoti.model;
 import java.util.*;
 
 public class Libretto {
+	
+	//svolge il ruolo di Model
 
 	private List<Voto> voti;
 	
@@ -32,6 +34,13 @@ public class Libretto {
 			}
 		}
 		return ris;
+	}
+	
+	public Voto cercaCorso (String nomeCorso) {
+		for (Voto v : this.voti)
+			if (v.getNome().equals(nomeCorso))
+				return v;
+		return null;
 	}
 	
 	public String toString() {
