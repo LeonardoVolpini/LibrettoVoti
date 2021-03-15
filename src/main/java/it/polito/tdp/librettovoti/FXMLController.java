@@ -37,6 +37,10 @@ public class FXMLController {
     void handleInserisci(ActionEvent event) {
     	//leggi e controlla i dati
     	String nomeEsame= this.txtEsame.getText();
+    	if (nomeEsame.length()==0) {
+    		this.txtResult.setText("Errore: nome esame vuoto"); //ci vorrebe una label di info errori. non va stampato in txtResult
+    		return;
+    	}
     	String votoEsame= this.txtVoto.getText();
     	int votoInt= Integer.parseInt(votoEsame);
     	String dataEsame= this.txtData.getText();
