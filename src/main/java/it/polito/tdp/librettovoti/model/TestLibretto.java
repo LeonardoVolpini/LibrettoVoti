@@ -26,6 +26,9 @@ public class TestLibretto {
 		//se uso metodo che return libretto
 		Libretto libventicinque = libretto.votiUguali(25);
 		System.out.println(libventicinque);
+		
+		libretto.add(new Voto("Chimica", 25, LocalDate.of(2019, 8, 21)));
+		libretto.add(new Voto("Chimica", 21, LocalDate.of(2019, 8, 21)));
 	}
 
 }
